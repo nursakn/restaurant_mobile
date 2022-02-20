@@ -3,13 +3,13 @@ import {CompositeNavigationProp} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import React from 'react';
 import {StyleSheet} from 'react-native';
-import {colors} from '../../constants/colors';
+import {colors} from '../../../constants/colors';
 import {
   HomeStackParamList,
   RouterStackParamList,
   TabStackParamList,
-} from '../../navigation/types';
-import TouchableAnimated from './TouchableAnimated';
+} from '../../../navigation/types';
+import TouchableAnimated from '../../atoms/TouchableAnimated';
 
 interface IProps {
   navigation: CompositeNavigationProp<

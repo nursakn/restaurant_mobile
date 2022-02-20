@@ -1,6 +1,6 @@
 import {View, StyleSheet} from 'react-native';
 import React from 'react';
-import TextCustom from './TextCustom';
+import TextCustom from '../../atoms/TextCustom';
 
 interface IProps {
   title: string;

@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet} from 'react-native';
-import {colors} from '../../constants/colors';
-import TouchableAnimated from './TouchableAnimated';
+import {colors} from '../../../constants/colors';
+import TouchableAnimated from '../TouchableAnimated';
 
 interface IProps {}
 

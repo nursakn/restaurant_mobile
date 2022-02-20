@@ -2,7 +2,7 @@ import {StyleSheet, TextInput, TouchableOpacity, View} from 'react-native';
 import React, {useState} from 'react';
 //@ts-ignore
 import Icon from 'react-native-vector-icons/Ionicons';
-import {colors} from '../../constants/colors';
+import {colors} from '../../../constants/colors';
 
 interface IProps {
   placeHolder: string;

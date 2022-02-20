@@ -2,10 +2,14 @@ import {StyleSheet, ScrollView, View} from 'react-native';
 import React from 'react';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import TextCustom from '../../components/atoms/TextCustom';
-import WeeklyLeaderBlock from '../../components/atoms/WeeklyLeaderBlock';
+import WeeklyLeaderBlock from '../../components/molecules/WeeklyLeaderBlock';
 import BlockNew from '../../components/atoms/BlockNew';
-import HeaderSimple from '../../components/atoms/HeaderSimple';
-import {HomeStackParamList, RouterStackParamList, TabStackParamList} from '../../navigation/types';
+import HeaderSimple from '../../components/molecules/HeaderSimple';
+import {
+  HomeStackParamList,
+  RouterStackParamList,
+  TabStackParamList,
+} from '../../navigation/types';
 import {CompositeNavigationProp} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {BottomTabNavigationProp} from '@react-navigation/bottom-tabs';

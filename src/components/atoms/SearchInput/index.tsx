@@ -1,6 +1,6 @@
 import {View, StyleSheet, TextInput, TouchableOpacity} from 'react-native';
 import React, {useRef, useState} from 'react';
-import {colors} from '../../constants/colors';
+import {colors} from '../../../constants/colors';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 interface IProps {}

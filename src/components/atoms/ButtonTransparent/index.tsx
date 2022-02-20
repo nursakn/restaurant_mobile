@@ -1,7 +1,7 @@
 import {TextStyle as TextStyleProp} from 'react-native';
 import React from 'react';
-import TextCustom from './TextCustom';
-import TouchableAnimated from './TouchableAnimated';
+import TextCustom from '../TextCustom';
+import TouchableAnimated from '../TouchableAnimated';
 
 interface IProps {
   title: string;
