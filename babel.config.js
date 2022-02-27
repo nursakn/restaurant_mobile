@@ -1,38 +1,42 @@
 const path = require('path');
-module.exports = {
-  presets: ['module:metro-react-native-babel-preset'],
-  plugins: [
-    [
-      require.resolve('babel-plugin-module-resolver'),
-      {
-        extensions: [
-          '.js',
-          '.ts',
-          '.ios.js',
-          '.ios.ts',
-          '.android.js',
-          '.android.ts',
-          '.json',
-          '.tsx',
-        ],
-        alias: {
-          atoms: path.resolve(__dirname, './src/components/atoms'),
-          molecules: path.resolve(__dirname, './src/components/molecules'),
-          organisms: path.resolve(__dirname, './src/components/organisms'),
-          templates: path.resolve(__dirname, './src/components/templates'),
-          modules: path.resolve(__dirname, './src/modules/index.ts'),
-          repositories: path.resolve(__dirname, './src/repositories'),
-          services: path.resolve(__dirname, './src/services'),
-          store: path.resolve(__dirname, './src/store'),
-          nav: path.resolve(__dirname, './src/views/navigation'),
-          screens: path.resolve(__dirname, './src/screens'),
+module.exports = function (api) {
+  api.cache(true);
+  return {
+    presets: ['module:metro-react-native-babel-preset'],
+    plugins: [
+      '@babel/plugin-transform-flow-strip-types',
+      ['@babel/plugin-proposal-class-properties', {loose: false}],
+      [
+        'babel-plugin-module-resolver',
+        {
+          root: './src',
+          extensions: [
+            '.js',
+            '.ts',
+            '.ios.js',
+            '.ios.ts',
+            '.android.js',
+            '.android.ts',
+            '.json',
+            '.tsx',
+          ],
+          alias: {
+            components: path.resolve(__dirname, './src/components'),
+            atoms: path.resolve(__dirname, './src/components/atoms'),
+            molecules: path.resolve(__dirname, './src/components/molecules'),
+            organisms: path.resolve(__dirname, './src/components/organisms'),
+            templates: path.resolve(__dirname, './src/components/templates'),
+            constants: path.resolve(__dirname, './src/constants'),
+            store: path.resolve(__dirname, './src/store'),
+            navigation: path.resolve(__dirname, './src/navigation'),
+            screens: path.resolve(__dirname, './src/screens'),
+          },
         },
-      },
+      ],
+      'react-native-reanimated/plugin',
     ],
-    ['@babel/plugin-proposal-class-properties', {loose: false}],
-    'react-native-reanimated/plugin',
-  ],
-  assumptions: {
-    setPublicClassFields: false,
-  },
+    assumptions: {
+      setPublicClassFields: false,
+    },
+  };
 };

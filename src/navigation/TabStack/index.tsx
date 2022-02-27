@@ -1,10 +1,10 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/Ionicons';
-import {colors} from '../../constants/colors';
-import HomeStack from '../HomeStack';
-import SearchStack from '../SearchStack';
-import {TabStackParamList} from '../types';
+import {colors} from 'constants/colors';
+import HomeStack from 'navigation/HomeStack';
+import SearchStack from 'navigation/SearchStack';
+import {TabStackParamList} from 'navigation/types';
 
 const Tab = createBottomTabNavigator<TabStackParamList>();
 

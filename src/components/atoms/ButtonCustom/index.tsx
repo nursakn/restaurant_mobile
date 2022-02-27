@@ -1,8 +1,8 @@
 import {StyleSheet, TextStyle as TextStyleProp} from 'react-native';
 import React from 'react';
-import {colors} from '../../../constants/colors';
-import TextCustom from '../TextCustom';
-import TouchableAnimated from '../TouchableAnimated';
+import {colors} from 'constants/colors';
+import TextCustom from 'atoms/TextCustom';
+import TouchableAnimated from 'atoms/TouchableAnimated';
 
 interface IProps {
   onPress: () => void;

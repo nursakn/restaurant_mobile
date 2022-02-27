@@ -40,19 +40,19 @@
     "moduleResolution": "node",               /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
     "baseUrl": "./src",                       /* Base directory to resolve non-absolute module names. */
     "paths": {
-      "components": ["components/*"],
-      "screens": ["screens/*"],
-      "atoms": ["components/atoms"],
-      "molecules": ["components/molecules"],
-      "organisms": ["components/organisms"],
-      "templates": ["components/templates"],
-      "assets": ["assets/*"],
-      "services": ["services/*"],
-      "store": ["store/*"],
-      "repositories": ["repositories/*"],
-      "navigation": ["navigation/*"],
-      "modules": ["modules/*"],
-      "models": ["models/*"],
+      "components/*": ["components/*"],
+      "screens/*": ["screens/*"],
+      "atoms/*": ["components/atoms/*"],
+      "molecules/*": ["components/molecules/*"],
+      "organisms/*": ["components/organisms/*"],
+      "templates/*": ["components/templates/*"],
+      "assets/*": ["assets/*"],
+      "services/*": ["services/*"],
+      "store/*": ["store/*"],
+      "repositories/*": ["repositories/*"],
+      "navigation/*": ["navigation/*"],
+      "modules/*": ["modules/*"],
+      "models/*": ["models/*"],
     },                           /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
     // "typeRoots": [],                       /* List of folders to include type definitions from. */

@@ -1,6 +1,6 @@
 import {Text, StyleSheet, TextStyle} from 'react-native';
 import React from 'react';
-import {colors} from '../../../constants/colors';
+import {colors} from 'constants/colors';
 
 interface IProps {
   children: React.ReactNode[] | React.ReactNode;

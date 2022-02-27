@@ -1,7 +1,7 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
-import RestaurantScreen from '../../screens/RestaurantScreen';
-import {RestaurantStackParamList} from '../types';
+import RestaurantScreen from 'screens/RestaurantScreen';
+import {RestaurantStackParamList} from 'navigation/types';
 
 const Stack = createNativeStackNavigator<RestaurantStackParamList>();
 

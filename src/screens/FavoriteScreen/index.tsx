@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import TextCustom from '../../components/atoms/TextCustom';
+import TextCustom from 'components/atoms/TextCustom';
 
 const FavoriteScreen = () => {
   return (

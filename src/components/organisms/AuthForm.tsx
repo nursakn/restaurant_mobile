@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import {View, StyleSheet} from 'react-native';
-import {colors} from '../../constants/colors';
-import InputCustom from '../atoms/InputCustom';
-import TextCustom from '../atoms/TextCustom';
+import {colors} from 'constants/colors';
+import InputCustom from 'atoms/InputCustom';
+import TextCustom from 'atoms/TextCustom';
 
 interface IProps {
   title?: string;

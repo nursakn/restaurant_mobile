@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import SearchInput from '../../components/atoms/SearchInput';
-import TextCustom from '../../components/atoms/TextCustom';
+import SearchInput from 'components/atoms/SearchInput';
+import TextCustom from 'components/atoms/TextCustom';
 
 interface IProps {}
 

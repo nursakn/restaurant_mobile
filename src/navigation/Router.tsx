@@ -1,12 +1,12 @@
 import React from 'react';
 import {observer} from 'mobx-react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import AuthStack from './AuthStack';
+import AuthStack from 'navigation/AuthStack';
 import {NavigationContainer} from '@react-navigation/native';
-import TabStack from './TabStack';
-import AuthStore from '../store/Auth';
-import {RouterStackParamList} from './types';
-import RestaurantStack from './RestaurantStack';
+import TabStack from 'navigation/TabStack';
+import AuthStore from 'store/Auth';
+import {RouterStackParamList} from 'navigation/types';
+import RestaurantStack from 'navigation/RestaurantStack';
 
 const Stack = createNativeStackNavigator<RouterStackParamList>();
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import {observer} from 'mobx-react';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import SignInTemplate from '../../components/templates/SignInTemplate';
+import SignInTemplate from 'components/templates/SignInTemplate';
 import {ScrollView, StyleSheet} from 'react-native';
-import {colors} from '../../constants/colors';
+import {colors} from 'constants/colors';
 
 const SignInScreen: React.FC = () => {
   return (

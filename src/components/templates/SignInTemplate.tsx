@@ -1,9 +1,9 @@
 import {StyleSheet, View} from 'react-native';
 import React from 'react';
-import AuthForm from '../organisms/AuthForm';
-import ButtonCustom from '../atoms/ButtonCustom';
-import ButtonTransparent from '../atoms/ButtonTransparent';
-import AuthStore from '../../store/Auth';
+import AuthForm from 'organisms/AuthForm';
+import ButtonCustom from 'atoms/ButtonCustom';
+import ButtonTransparent from 'atoms/ButtonTransparent';
+import AuthStore from 'store/Auth';
 
 const SignInTemplate: React.FC = () => {
   const signIn = () => {
