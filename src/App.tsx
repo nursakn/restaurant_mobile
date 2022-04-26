@@ -2,11 +2,14 @@ import React from 'react';
 import Router from 'navigation/Router';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import {StyleSheet} from 'react-native';
+import AppContextProvider from 'context/App';
 
 const App: React.FC = () => {
   return (
     <GestureHandlerRootView style={styles.container}>
-      <Router />
+      <AppContextProvider>
+        <Router />
+      </AppContextProvider>
     </GestureHandlerRootView>
   );
 };

@@ -1081,6 +1081,13 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@react-native-async-storage/async-storage@^1.17.3":
+  version "1.17.3"
+  resolved "https://registry.yarnpkg.com/@react-native-async-storage/async-storage/-/async-storage-1.17.3.tgz#fa7010aa9b6a811ff653df3698a90d3c173dd6a6"
+  integrity sha512-2dxdlGwBjBP2qYu6F72U7cRRFshISYiNEWCaQNOJtxUERCMaYRWcniYqhL248KSbGUMpRhFCEtliztsiGoYYMA==
+  dependencies:
+    merge-options "^3.0.4"
+
 "@react-native-community/cli-debugger-ui@^6.0.0-rc.0":
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/@react-native-community/cli-debugger-ui/-/cli-debugger-ui-6.0.0.tgz#ef9eb1268d85c1bd3caf2c4d36dc350bb080f254"
@@ -1380,6 +1387,11 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@types/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#1ee30d79544ca84d68d4b3cdb0af4f205663dd2d"
   integrity sha512-OCutwjDZ4aFS6PB1UZ988C4YgwlBHJd6wCeQqaLdmadZ/7e+w79+hbMUFC1QXDNCmdyoRfAFdm0RypzwR+Qpag==
+
+"@types/geojson@^7946.0.7":
+  version "7946.0.8"
+  resolved "https://registry.yarnpkg.com/@types/geojson/-/geojson-7946.0.8.tgz#30744afdb385e2945e22f3b033f897f76b1f12ca"
+  integrity sha512-1rkryxURpr6aWP7R786/UQOkJ3PcpQiWkAXBmdWc7ryFWqN6a4xfK7BtjXvFBKO9LjQ+MWQSWxYeZX1OApnArA==
 
 "@types/graceful-fs@^4.1.2":
   version "4.1.5"
@@ -3869,6 +3881,11 @@ is-number@^7.0.0:
   resolved "https://registry.yarnpkg.com/is-number/-/is-number-7.0.0.tgz#7535345b896734d5f80c4d06c50955527a14f12b"
   integrity sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==
 
+is-plain-obj@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/is-plain-obj/-/is-plain-obj-2.1.0.tgz#45e42e37fccf1f40da8e5f76ee21515840c09287"
+  integrity sha512-YWnfyRwxL/+SsrWYfOpUtz5b3YD+nyfkHvjbcanzk8zgyO4ASD67uVMRt8k5bM4lLMDnXfriRhOpemw+NfT1eA==
+
 is-plain-object@^2.0.3, is-plain-object@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/is-plain-object/-/is-plain-object-2.0.4.tgz#2c163b3fafb1b606d9d17928f05c2a1c38e07677"
@@ -4755,6 +4772,13 @@ map-visit@^1.0.0:
   integrity sha1-7Nyo8TFE5mDxtb1B8S80edmN+48=
   dependencies:
     object-visit "^1.0.0"
+
+merge-options@^3.0.4:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/merge-options/-/merge-options-3.0.4.tgz#84709c2aa2a4b24c1981f66c179fe5565cc6dbb7"
+  integrity sha512-2Sug1+knBjkaMsMgf1ctR1Ujx+Ayku4EdJN4Z+C2+JzoeF7A3OZ9KM2GY0CpQS51NR61LTurMJrRKPhSs3ZRTQ==
+  dependencies:
+    is-plain-obj "^2.1.0"
 
 merge-stream@^2.0.0:
   version "2.0.0"
@@ -5813,6 +5837,13 @@ react-native-gradle-plugin@^0.0.3:
   integrity sha512-mvkntuCKpKL26XV54XVBGt2hJWGh6IJc5rjOEXQ/9jd9FNhsbRnqdOjI8XMy1gLvK2X8xwbbpEym+QKunV658g==
   dependencies:
     react-native-codegen "*"
+
+react-native-maps@^0.30.1:
+  version "0.30.1"
+  resolved "https://registry.yarnpkg.com/react-native-maps/-/react-native-maps-0.30.1.tgz#b227f3cbf68947bbd22fcf2b7470a7ab3a4f3fbb"
+  integrity sha512-VDgGygFcXwKLFNmdGb5DVy3DJhjP3qCe3txzDfeO6kQyNELj875ZbZMTYW84XsLUBFNpAWXKffWvMKHMQKv2Gg==
+  dependencies:
+    "@types/geojson" "^7946.0.7"
 
 react-native-reanimated@^2.4.1:
   version "2.4.1"

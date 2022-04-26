@@ -10,6 +10,7 @@ import {
   TabStackParamList,
 } from 'navigation/types';
 import TouchableAnimated from 'atoms/TouchableAnimated';
+import {RestaurantShort} from 'types/App';
 
 interface IProps {
   navigation: CompositeNavigationProp<
@@ -19,9 +20,10 @@ interface IProps {
       BottomTabNavigationProp<TabStackParamList>
     >
   >;
+  restuarant: RestaurantShort;
 }
 
-const WeeklyLeaderBlock: React.FC<IProps> = ({navigation}) => {
+const WeeklyLeaderBlock: React.FC<IProps> = ({navigation, restuarant}) => {
   return (
     <TouchableAnimated
       style={styles.container}
@@ -29,7 +31,7 @@ const WeeklyLeaderBlock: React.FC<IProps> = ({navigation}) => {
         navigation.navigate('RestaurantStack', {
           screen: 'RestaurantScreen',
           params: {
-            id: 'HIHIHIHI',
+            id: restuarant.id.toString(),
           },
         });
       }}
@@ -43,8 +45,17 @@ const styles = StyleSheet.create({
   container: {
     height: 210,
     width: 300,
-    backgroundColor: colors.gray,
     borderRadius: 8,
     marginRight: 16,
+    backgroundColor: colors.gray,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+
+    elevation: 5,
   },
 });

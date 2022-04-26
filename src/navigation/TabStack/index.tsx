@@ -5,6 +5,7 @@ import {colors} from 'constants/colors';
 import HomeStack from 'navigation/HomeStack';
 import SearchStack from 'navigation/SearchStack';
 import {TabStackParamList} from 'navigation/types';
+import MapScreen from 'screens/MapScreen';
 
 const Tab = createBottomTabNavigator<TabStackParamList>();
 
@@ -36,6 +37,19 @@ const TabStack: React.FC = () => {
             <Icon
               color={focused ? colors.main : colors.gray}
               name="search"
+              size={24}
+            />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="MapScreen"
+        component={MapScreen}
+        options={{
+          tabBarIcon: ({focused}) => (
+            <Icon
+              color={focused ? colors.main : colors.gray}
+              name="map-outline"
               size={24}
             />
           ),

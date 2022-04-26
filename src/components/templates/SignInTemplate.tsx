@@ -1,13 +1,21 @@
 import {StyleSheet, View} from 'react-native';
-import React from 'react';
+import React, {useContext} from 'react';
 import AuthForm from 'organisms/AuthForm';
 import ButtonCustom from 'atoms/ButtonCustom';
 import ButtonTransparent from 'atoms/ButtonTransparent';
-import AuthStore from 'store/Auth';
+import {AppContext} from 'context/App';
 
 const SignInTemplate: React.FC = () => {
+  const {
+    stores: {authStore},
+  } = useContext(AppContext);
+
   const signIn = () => {
-    AuthStore.logIn();
+    authStore.logIn();
+  };
+
+  const signUp = () => {
+    console.log(authStore.signUp());
   };
 
   return (
@@ -16,7 +24,7 @@ const SignInTemplate: React.FC = () => {
         <AuthForm from="signIn" />
       </View>
       <ButtonCustom onPress={signIn} title="Sign in" />
-      <ButtonTransparent onPress={() => {}} title="Already have an account?" />
+      <ButtonTransparent onPress={signUp} title="Already have an account?" />
     </View>
   );
 };

@@ -1,3 +1,4 @@
+import {Table} from 'types/App';
 import {NavigatorScreenParams} from '@react-navigation/native';
 
 export type RouterStackParamList = {
@@ -9,6 +10,7 @@ export type RouterStackParamList = {
 export type TabStackParamList = {
   HomeStack: NavigatorScreenParams<HomeStackParamList>;
   SearchStack: NavigatorScreenParams<SearchStackParamList>;
+  MapScreen: undefined;
 };
 
 export type AuthStackParamList = {
@@ -21,6 +23,9 @@ export type HomeStackParamList = {
 
 export type RestaurantStackParamList = {
   RestaurantScreen: {id: string};
+  ReserveScreen: {
+    table: Table;
+  };
 };
 
 export type SearchStackParamList = {

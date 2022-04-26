@@ -7,7 +7,6 @@ export interface SignInRequestT {
 
 export interface SignInResponseT {
   token: string;
-  refreshToken: string;
 }
 
 // Restaurant Types
@@ -20,8 +19,11 @@ export interface RestaurantShort {
   img: string; // base64
   freeTables: number;
   allTables: number;
-  type: RestaurantType;
   isPending: boolean;
+  address: string;
+  phone: string;
+  info: string;
+  rating: string;
 }
 
 export interface RestaurantsList {
@@ -38,15 +40,16 @@ export type TableStatus = 'free' | 'pending' | 'occupied' | 'yours';
 
 export type Table = {
   id: number;
-  restaurantId: number;
+  restaraunt_id: number;
   free: boolean;
-  position: {
-    x: number;
-    y: number;
-  };
+  coord_x: string;
+  coord_y: string;
   type: TableType;
   status: TableStatus;
-  seats: number;
+  num_of_person: number;
+  floor: number;
+  height: number;
+  width: number;
 };
 
 // get on endpoints
@@ -60,12 +63,16 @@ export interface NewRestaurantsResponse extends RestaurantsList {}
  *  pictures HZ
  */
 
-export interface Restaurant extends RestaurantShort {
+export interface RestaurantI extends RestaurantShort {
   description: string;
   address: string;
   phone: string;
   tables: Table[];
+  freeTables: number;
+  id: number;
+  info: string;
   pictures: string[]; // base64
+  rating: string;
 }
 
 /**
